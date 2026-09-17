@@ -1,0 +1,50 @@
+git --version
+git config --global user.name "Feng678"
+git config --global user.email "lpfncepu@163.com"
+cd desktop
+cd "Git and GitHub tutorial"
+git init
+
+放入文件/进行文件修改
+git status （modified）
+git add .     (staged) / git add about.txt
+git commit -m "A message for the commit" (committed)
+
+git remote add origin https://github.com/Peak568/First-Repo.git
+git branch -M main
+git push -u origin main
+
+
+
+
+
+
+测试能不能连通 github 的 443 端口：
+Test-NetConnection github.com -Port 443
+
+给 Git 配置代理：
+git config --global http.proxy http://127.0.0.1:7897
+git config --global https.proxy http://127.0.0.1:7897
+
+取消代理：
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+
+推送：
+git remote add origin https://github.com/Peak568/First-Repo.git
+git branch -M main
+git push -u origin main
+带日志推送（用这个，第一次会弹出登录窗口，设置账号）
+$env:GIT_CURL_VERBOSE=1; git push -u origin main
+
+配置PAT令牌：
+继续使用 HTTPS（当前的 remote 地址，最简单，不用改仓库配置）
+1. 浏览器登录 Github，去创建个人访问令牌 PAT
+Settings → Developer settings → Personal access tokens → Tokens (classic)
+   - 勾选权限：`repo`（仓库读写权限）
+   - 生成令牌，**复制保存好，只显示这一次！**
+2. 当 Git 弹出登录窗口：
+   - Username：你的 GitHub 用户名（Peak568）
+   - Password：粘贴刚才生成的 PAT 令牌
+3. 认证成功后，即可正常 push。
+> 如果 Windows Git 凭据管理器记住了旧的错误凭据，会反复 401，需要清理：> Windows 搜索「凭据管理器」→ Windows 凭据，找到[github.com](https://github.com)条目，删除。下次 push 会重新弹窗输入。
