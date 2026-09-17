@@ -19,6 +19,8 @@ git pull
 
 #创建一个新的分支
 git checkout -b test
+分支上传命令：
+git push -u origin XXX
 
 #切换回主分支
 git checkout main
