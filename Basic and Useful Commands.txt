@@ -7,7 +7,7 @@ git init
 
 放入文件/进行文件修改
 git status （modified）
-git add .     (staged) / git add about.txt
+git add .     (staged分阶段) / git add about.txt
 git commit -m "A message for the commit" (committed)
 
 git remote add origin https://github.com/Peak568/First-Repo.git
@@ -17,6 +17,16 @@ git push -u origin main
 
 git pull
 
+#创建一个新的分支
+git checkout -b test
+分支上传命令：
+git push -u origin XXX
+
+#切换回主分支
+git checkout main
+
+#查看所有分支
+git branch
 
 
 测试能不能连通 github 的 443 端口：
