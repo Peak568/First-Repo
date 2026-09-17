@@ -23,8 +23,8 @@ git push -u origin main
 Test-NetConnection github.com -Port 443
 
 给 Git 配置代理：
-git config --global http.proxy http://127.0.0.1:7897
-git config --global https.proxy http://127.0.0.1:7897
+git config --global http.proxy http://127.0.0.1:7890
+git config --global https.proxy http://127.0.0.1:7890
 
 取消代理：
 git config --global --unset http.proxy
