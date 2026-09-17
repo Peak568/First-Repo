@@ -7,7 +7,7 @@ git init
 
 放入文件/进行文件修改
 git status （modified）
-git add .     (staged) / git add about.txt
+git add .     (staged分阶段) / git add about.txt
 git commit -m "A message for the commit" (committed)
 
 git remote add origin https://github.com/Peak568/First-Repo.git
