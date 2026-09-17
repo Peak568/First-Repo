@@ -17,6 +17,14 @@ git push -u origin main
 
 git pull
 
+#创建一个新的分支
+git checkout -b test
+
+#切换回主分支
+git checkout main
+
+#查看所有分支
+git branch
 
 
 测试能不能连通 github 的 443 端口：
