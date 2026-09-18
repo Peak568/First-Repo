@@ -11,7 +11,7 @@ git add .     (staged分阶段) / git add about.txt
 git commit -m "A message for the commit" (committed)
 
 git remote add origin https://github.com/Peak568/First-Repo.git
-git branch -M main
+git branch -M main （把当前分支重命名为main，大M代表强制重命名，如果有重名就把重名的删掉）
 git push -u origin main
 
 
