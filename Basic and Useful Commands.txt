@@ -5,6 +5,8 @@ cd desktop
 cd "Git and GitHub tutorial"
 git init
 
+返回上级目录 cd..
+
 放入文件/进行文件修改，保存
 git status （modified）
 git add .     (staged分阶段) / git add about.txt
