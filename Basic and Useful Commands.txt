@@ -15,7 +15,7 @@ git branch -M main （把当前分支重命名为main，大M代表强制重命�
 git push -u origin main
 
 
-git pull
+git pull 拉取并更新（merge）
 
 #创建一个新的分支
 git checkout -b test
