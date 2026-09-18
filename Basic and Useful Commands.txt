@@ -28,7 +28,7 @@ git checkout main
 #查看所有分支
 git branch
 git fetch --prune (刷新远程引用)
-git branch -r (相看所有远程分支)
+git branch -r (查看所有远程分支)
 
 
 
